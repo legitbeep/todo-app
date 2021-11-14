@@ -1,0 +1,45 @@
+  <!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App JavaScript | CodingNepal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+  <div class="wrapper login">
+    <header>Todo App</header>
+    <div class="inputField">
+      <input id="username" type="text" placeholder="Username">
+      <button class="submitBtn">Submit</button>
+    </div>
+    <div class="footer">
+      <span>You have to enter username to continue.</span>
+    </div>
+  </div>
+  <div class="wrapper form"> 
+    <header>Todo App</header>
+      <p class="userinfo"></p>
+    <div id="inputField" class="inputField">
+      <input type="text" placeholder="Add your new todo">
+      <button><i class="fas fa-plus"></i></button>
+    </div>
+    <ul class="todoList">
+      
+    </ul>
+    <div class="footer">
+      <span>You have <span class="pendingTasks"></span> pending tasks</span>
+      <button>Clear All</button>
+    </div>
+    <div class="end">
+      
+      <button class="logout">Logout</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
