@@ -110,6 +110,8 @@ deleteAllBtn.onclick = () => {
 };
 
 function login() {
+  myAudio.play();
+  myAudio.volume = 0.1;
   let userEnteredValue = usernameBox.value;
   if (userEnteredValue.trim() != 0) {
     submitBtn.classList.add("active");
@@ -123,4 +125,20 @@ function login() {
   formEle.classList.remove("hidden");
   showTasks();
   submitBtn.classList.remove("active");
+}
+
+// song
+let myAudio = new Audio("./music/lofi.mp3");
+if (typeof myAudio.loop == "boolean") {
+  myAudio.loop = true;
+} else {
+  myAudio.addEventListener(
+    "ended",
+    function () {
+      this.currentTime = 0;
+      this.play();
+      myAudio.volume = 0.1;
+    },
+    false
+  );
 }
