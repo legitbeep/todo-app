@@ -1,10 +1,10 @@
 // getting all required elements
-const usernameBox = document.querySelector(".inputField #username");
+const usernameBox = document.querySelector(".inputLogin");
 const inputBox = document.querySelector("#inputField input");
 const addBtn = document.querySelector("#inputField button");
 const todoList = document.querySelector(".todoList");
 const deleteAllBtn = document.querySelector(".footer button");
-const submitBtn = document.querySelector(".inputField .submitBtn");
+const submitBtn = document.querySelector(".submitBtn");
 const loginEle = document.querySelector(".login");
 const formEle = document.querySelector(".form");
 const userInfoEle = document.querySelector(".userinfo");

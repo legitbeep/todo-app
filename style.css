@@ -51,9 +51,8 @@ body {
   width: 100%;
   margin: 120px auto;
   padding: 25px;
-  border-radius: 5px;
-  borderColor: black;
-  borderWidth : 2px;
+  border-radius: 16px;
+  border: 2px solid black;
   box-shadow: 0px 6px 0px black;
 }
 .wrapper header {
@@ -66,21 +65,12 @@ body {
   display: flex;
   height: 45px;
 }
-.inputField input {
-  width: 85%;
-  height: 100%;
-  outline: none;
-  border-radius: 3px;
-  border: 1px solid #ccc;
-  font-size: 17px;
-  padding-left: 15px;
-  transition: all 0.3s ease;
-}
-.inputField input:focus {
+.inputField input:focus,
+.inputLogin:focus {
   border-color: #8e49e8;
 }
 .inputField button {
-  width: 50px;
+  width: 120px;
   height: 100%;
   border: none;
   color: #fff;
@@ -89,14 +79,17 @@ body {
   outline: none;
   background: #8e49e8;
   cursor: pointer;
-  border-radius: 3px;
+  border-radius: 12px;
   opacity: 0.6;
   pointer-events: none;
   transition: all 0.3s ease;
+  border: 2px solid black;
 }
 .inputField button:hover,
+.submitBtn:hover,
 .footer button:hover {
   background: #721ce3;
+  color: white;
 }
 .inputField button.active {
   opacity: 1;
@@ -106,33 +99,47 @@ body {
   max-height: 250px;
   overflow-y: auto;
 }
-.inputField .submitBtn {
-  width: 100px;
-  padding: 6px 10px;
-  border-radius: 3px;
+.inputLogin {
+  width: 100%;
+  padding: 8px 10px;
   border: none;
   outline: none;
-  color: #fff;
+  color: black;
   font-weight: 400;
   font-size: 16px;
   margin-left: 5px;
-  background: #8e49e8;
-  cursor: pointer;
-  user-select: none;
-  opacity: 0.6;
-  pointer-events: none;
+  opacity: 1;
   transition: all 0.3s ease;
+  border: 2px solid black;
+  border-radius: 12px;
+  margin: 10px 0px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.submitBtn {
+  width: 100%;
+  padding: 8px 0px;
+  border: 2px solid black;
+  border-radius: 12px;
+  background-color: white;
+  color: black;
+  font-size: medium;
 }
 .todoList li {
   position: relative;
   list-style: none;
   margin-bottom: 8px;
-  background: #f2f2f2;
-  border-radius: 3px;
+  background: #c7b0ec;
+  border-radius: 12px;
   padding: 10px 15px;
   cursor: default;
   overflow: hidden;
   word-wrap: break-word;
+  border: 2px solid black;
 }
 .todoList li .icon {
   position: absolute;
@@ -160,8 +167,8 @@ body {
 }
 .footer button {
   padding: 6px 10px;
-  border-radius: 3px;
-  border: none;
+  border-radius: 12px;
+  border: 2px solid black;
   outline: none;
   color: #fff;
   font-weight: 400;
@@ -197,8 +204,8 @@ body {
   width: 85%;
   height: 100%;
   outline: none;
-  border-radius: 3px;
-  border: 1px solid #ccc;
+  border-radius: 12px;
+  border: 2px solid black;
   font-size: 17px;
   padding-left: 15px;
   transition: all 0.3s ease;
@@ -220,6 +227,8 @@ body {
   font-size: 16px;
   background: #f63566;
   cursor: pointer;
+  border-radius: 12px;
+  border: 2px solid black;
 }
 .logout:hover {
   background: #f8154e;
